@@ -20,6 +20,7 @@ environ.Env.read_env()
 secret_key = env.str('SECRET_KEY')
 user_db = env.str('USER_DB')
 password_db = env.str('PASSWORD_DB')
+debug_production = env.bool('DEBUG_PRODUCTION')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +38,7 @@ SECRET_KEY = secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
