@@ -96,7 +96,7 @@ DATABASES = {
     },
     'producao':{
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fundsfinder-api',
+        'NAME': 'fundsfinder_api',
         'USER': user_db,
         'PASSWORD': password_db,
         'HOST': 'localhost',
