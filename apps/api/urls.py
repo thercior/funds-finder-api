@@ -28,7 +28,7 @@ from api.views import FundsEstateViewSet
 
 app_name = 'API'
 
-router = DefaultRouter(trailing_slash=False)
+router = DefaultRouter(trailing_slash=True)
 router.register(r'funds', FundsEstateViewSet)
 
 urlpatterns = router.urls
